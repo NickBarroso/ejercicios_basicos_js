@@ -14,7 +14,7 @@ function averageWord(list) {
     sum += list[i];
     }
   }
-return sum;
+return sum / list.length;  
 }
 
 
