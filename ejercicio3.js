@@ -10,12 +10,12 @@ console.log(15 % 9);
 // 3.4 Usa el correcto operador de asignación que resultará en o = 15,
 // teniendo dos variables p = 10 y j = 5.
 let p = 10;
-let j = 5;
+const j = 5;
 
 console.log((p += j));
 
 // 3.5 Usa el correcto operador de asignación que resultará en i = 50,
 // teniendo dos variables c = 10 y m = 5.
 let c = 10;
-let m = 5;
+const m = 5;
 console.log((c *= m));

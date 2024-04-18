@@ -6,19 +6,21 @@ const avengers = [
   "Iron Man",
   "Captain A.",
   "Spiderman",
-  "Captain M."
+  "Captain M.",
 ];
 
 function findLongestWord(stringList) {
-  let longestWord = [""];
+  let longestWord = "";
   //Recorremos el array
   for (let i = 0; i < stringList.length; i++) {
-    //Al tamaño de cada palabra lo comparamos con el índice cero del nuevo
-    //array que hemos creado. Si es mayor la palabra que la que se encuentra en el
-    //array longestWord elimina la anterior y añade la nueva. 
-    if (stringList[i].length > longestWord[0].length) {
-      //S
-      longestWord.splice(0, 1, stringList[i]);
+    //  Al tamaño de cada palabra lo comparamos con el índice cero del nuevo
+    //  array que hemos creado. Si es mayor la palabra que la que se encuentra en el
+    //  array longestWord elimina la anterior y añade la nueva.
+
+    //Nota: en este caso, no devuelve Captain M. porque tienen la misma cantidad de letras,
+    //para que devuelva la última palabra solo hay que cambiar la comparación a >=.
+    if (stringList[i].length > longestWord.length) {
+      longestWord = stringList[i];
     }
   }
   return longestWord;
